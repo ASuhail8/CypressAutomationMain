@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-10T05:21:50.447Z",
+    "end": "2021-09-10T05:22:06.600Z",
+    "duration": 16153,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "271e1605-a1e3-47ac-b46b-70a74bab33e3",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/UITests/amazonTest.js",
+      "file": "cypress/integration/2-advanced-examples/UITests/amazonTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "49e6b19e-7e6d-4f50-a79b-d5fee4028b53",
+          "title": "Amazon",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Amazon sign in test",
+              "fullTitle": "Amazon Amazon sign in test",
+              "timedOut": null,
+              "duration": 13355,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env('amazonUrl'));\ncy.get('#nav-link-accountList-nav-line-1').click();\ncy.get('#ap_email').type(this.data.email);\ncy.get('#continue').click();\ncy.get(\"div h4[class='a-alert-heading']\").then(errorMsg => {\n  var text = errorMsg.text();\n  cy.log(text);\n  expect(text).equal('There was a problem');\n});",
+              "err": {},
+              "uuid": "c67eb1d6-3fa2-473b-87b7-04944b60c9bf",
+              "parentUUID": "49e6b19e-7e6d-4f50-a79b-d5fee4028b53",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c67eb1d6-3fa2-473b-87b7-04944b60c9bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13355,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

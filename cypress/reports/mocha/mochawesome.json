@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-09-06T14:12:36.670Z",
+    "end": "2021-09-06T14:12:40.794Z",
+    "duration": 4124,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f738bf70-dd3f-49b3-829b-579aedcc769e",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/API/get_api_test.js",
+      "file": "cypress/integration/2-advanced-examples/API/get_api_test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bdbb39ba-16e9-4cb6-871b-81e6bc2b5bab",
+          "title": "Simple Get api test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "get_api_request",
+              "fullTitle": "Simple Get api test get_api_request",
+              "timedOut": null,
+              "duration": 2017,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=32ed6950636d774b394e85aea208037d').then(res => {\n  expect(res.status).equal(200);\n  expect(res.body.location).has.property('longitude', '33.427362');\n});",
+              "err": {},
+              "uuid": "0e971f01-7219-4e39-8d7a-d57ddfcc5fb8",
+              "parentUUID": "bdbb39ba-16e9-4cb6-871b-81e6bc2b5bab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "mocking apis",
+              "fullTitle": "Simple Get api test mocking apis",
+              "timedOut": null,
+              "duration": 145,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request('https://reqres.in/api/users'); // Get request\ncy.intercept('GET', 'https://reqres.in/api/users', {\n  'name': 'suhail'\n}).then(res => {\n  console.log(JSON.stringify(res));\n});",
+              "err": {},
+              "uuid": "22e43d07-6b53-4bcd-967f-1e6fcf5b3eb1",
+              "parentUUID": "bdbb39ba-16e9-4cb6-871b-81e6bc2b5bab",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Trying configuration ",
+              "fullTitle": "Simple Get api test Trying configuration ",
+              "timedOut": null,
+              "duration": 1832,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: Cypress.env('rahulUrlProd') + '/maps/api/place/get/json',\n  qs: {\n    \"key\": \"qaclick123\",\n    \"place_id\": \"32ed6950636d774b394e85aea208037d\"\n  }\n}).then(response => {\n  expect(response.isOkStatusCode).to.be.true;\n});",
+              "err": {},
+              "uuid": "e6518185-9c10-4652-90e0-8a843689aad0",
+              "parentUUID": "bdbb39ba-16e9-4cb6-871b-81e6bc2b5bab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0e971f01-7219-4e39-8d7a-d57ddfcc5fb8",
+            "22e43d07-6b53-4bcd-967f-1e6fcf5b3eb1",
+            "e6518185-9c10-4652-90e0-8a843689aad0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3994,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

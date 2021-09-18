@@ -1,0 +1,131 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 1,
+    "failures": 0,
+    "start": "2021-09-10T05:24:02.425Z",
+    "end": "2021-09-10T05:24:03.319Z",
+    "duration": 894,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 50,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "c210d473-4121-4de6-b37e-8065c49fbcfc",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/VisualTesting/compareImages.js",
+      "file": "cypress/integration/2-advanced-examples/VisualTesting/compareImages.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4b1684cb-00ad-4141-9fd2-0896fa1252cb",
+          "title": "compare 2  after downloading",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Download and compare images test",
+              "fullTitle": "compare 2  after downloading Download and compare images test",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "b4d1d334-9cdd-47a4-a1fd-1ffeee3afd75",
+              "parentUUID": "4b1684cb-00ad-4141-9fd2-0896fa1252cb",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Compare 2 images",
+              "fullTitle": "compare 2  after downloading Compare 2 images",
+              "timedOut": null,
+              "duration": 813,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task(\"compareImages\", {\n  fileName1: \"ExpectedImage.png\",\n  fileName2: \"3.png\"\n}).then(isMatching => {\n  expect(isMatching).to.be.true;\n});",
+              "err": {
+                "message": "AssertionError: expected false to be true",
+                "estack": "AssertionError: expected false to be true\n    at Context.eval (http://localhost:63801/__cypress/tests?p=cypress\\integration\\2-advanced-examples\\VisualTesting\\compareImages.js:115:31)",
+                "diff": null
+              },
+              "uuid": "29fa95b8-53e8-466f-9526-d2d78ed77522",
+              "parentUUID": "4b1684cb-00ad-4141-9fd2-0896fa1252cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "29fa95b8-53e8-466f-9526-d2d78ed77522"
+          ],
+          "pending": [
+            "b4d1d334-9cdd-47a4-a1fd-1ffeee3afd75"
+          ],
+          "skipped": [],
+          "duration": 813,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
