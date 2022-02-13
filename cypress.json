@@ -3,7 +3,7 @@
     "projectId": "2marjb",
     "reporter": "junit",
     "reporterOptions": {
-        "mochaFile": "results/my-test-output-[hash].xml"
+        "mochaFile": "./cypress/results/my-test-output-[hash].xml"
     },
     "env": {
         "rahulUrlProd": "https://rahulshettyacademy.com",

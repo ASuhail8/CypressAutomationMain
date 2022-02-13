@@ -4,6 +4,4 @@ services:
     image: asuhail8/cypress-e2e-docker
     command: "test --spec cypress/integration/2-advanced-examples/UITests/*"
     volumes:
-      - ./cypress/reports:/cypress-e2e-docker/cypress/reports
-      - ./cypress/screenshots:/cypress-e2e-docker/cypress/screenshots
-      - ./results:/cypress-e2e-docker/results
+      - ./cypress/results:/cypress-e2e-docker/results
