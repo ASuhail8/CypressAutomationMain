@@ -6,4 +6,4 @@ services:
     volumes:
       - ./cypress/reports:/cypress-e2e-docker/cypress/reports
       - ./cypress/screenshots:/cypress-e2e-docker/cypress/screenshots
-      - ./cypress/results:/cypress-e2e-docker/cypress/results
+      - ./results:/cypress-e2e-docker/results

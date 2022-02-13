@@ -1,17 +1,9 @@
 {
     "defaultCommandTimeout": 5000,
     "projectId": "2marjb",
-    "reporter": "cypress-multi-reporters",
+    "reporter": "junit",
     "reporterOptions": {
-        "mochaFile": "cypress/results/outputfile.xml",
-        "reporterEnabled": "mochawesome",
-        "mochawesomeReporterOptions": {
-            "reportDir": "cypress/reports/mocha",
-            "quite": true,
-            "overwrite": false,
-            "html": false,
-            "json": true
-        }
+        "mochaFile": "results/my-test-output-[hash].xml"
     },
     "env": {
         "rahulUrlProd": "https://rahulshettyacademy.com",
