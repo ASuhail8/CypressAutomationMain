@@ -2,6 +2,6 @@ version: '3'
 services:
   e2e:
     image: asuhail8/cypress-e2e-docker
-    command: "test --spec cypress/integration/2-advanced-examples/UITests/amazonTest.js"
+    command: "test --spec cypress/integration/2-advanced-examples/UITests/*.js"
     volumes:
       - ./cypress/results:/cypress-e2e-docker/cypress/results
