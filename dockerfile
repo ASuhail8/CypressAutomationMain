@@ -9,5 +9,6 @@ COPY ./cypress ./cypress
 RUN npm install -g "cypress@9.4.1"
 RUN npm install download-file --save
 RUN npm install --save jimp
+RUN npm install mocha-junit-reporter --save-dev
 RUN cypress verify
 ENTRYPOINT ["cypress", "run"]
