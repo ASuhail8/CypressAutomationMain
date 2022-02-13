@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-10T05:22:12.636Z",
-    "end": "2021-09-10T05:22:12.636Z",
-    "duration": 0,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2022-02-13T08:25:55.749Z",
+    "end": "2022-02-13T08:26:06.645Z",
+    "duration": 10896,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "a04b541e-5c9a-46b7-a447-54607599cc12",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/UITests/Test2.js",
+      "file": "cypress/integration/2-advanced-examples/UITests/Test2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f766409c-9b5c-425e-b842-881394052cec",
+          "title": "My second test case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "second test case",
+              "fullTitle": "My second test case second test case",
+              "timedOut": null,
+              "duration": 9027,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://rahulshettyacademy.com/seleniumPractise/#/\");\ncy.get('input.search-keyword').type('ca');\ncy.get('div.products').find('div.product').each(($el, index, $list) => {\n  var textVeggies = $el.find('h4.product-name').text();\n  if (textVeggies.includes(\"Capsicum\")) {\n    $el.find('button').click();\n  }\n});\ncy.get('a.cart-icon').click();\ncy.contains('PROCEED TO CHECKOUT').click();\ncy.get('.promocode').type(\"RAHULSHETTY\");\ncy.contains('Apply').click();\ncy.get('span.promoInfo').should('have.text', 'Invalid code ..!');\ncy.contains('Place Order').click();",
+              "err": {},
+              "uuid": "af5fc0b8-52c3-4424-b098-b9f63627f14b",
+              "parentUUID": "f766409c-9b5c-425e-b842-881394052cec",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "af5fc0b8-52c3-4424-b098-b9f63627f14b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9027,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2022-02-13T09:44:24.722Z",
-    "end": "2022-02-13T09:44:25.576Z",
-    "duration": 854,
+    "start": "2022-02-13T10:02:33.208Z",
+    "end": "2022-02-13T10:02:34.693Z",
+    "duration": 1485,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ce215b7e-9b21-49c6-ac3f-653a794168da",
+      "uuid": "541ac763-ed2c-492c-9159-29f4015fb5e5",
       "title": "",
       "fullFile": "cypress/integration/2-advanced-examples/UITests/ReloadTest.js",
       "file": "cypress/integration/2-advanced-examples/UITests/ReloadTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "253990ee-d800-4633-a4ed-31acc2296ab3",
+          "uuid": "9a1e6943-b6d8-41a5-918b-af40ea9b21ae",
           "title": "Reload ",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Reload test",
               "fullTitle": "Reload  Reload test",
               "timedOut": null,
-              "duration": 336,
+              "duration": 594,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -48,11 +48,11 @@
               "code": "//url : https://rahulshettyacademy.com/seleniumPractise/#/\ncy.visit(Cypress.env('rahulUrl') + '/seleniumPractise/#/');\ncy.get('.search-keyword').type(\"Carrot\");\ncy.reload();\ncy.get('.brand').should('have.text', 'GREENKART');",
               "err": {
                 "message": "CypressError: `cy.visit()` failed trying to load:\n\nundefined/seleniumPractise/\n\nWe failed looking for this file at the path:\n\n/cypress-e2e-docker/undefined/seleniumPractise/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found",
-                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nundefined/seleniumPractise/\n\nWe failed looking for this file at the path:\n\n/cypress-e2e-docker/undefined/seleniumPractise/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:43923/__cypress/runner/cypress_runner.js:159291:84\n    at visitFailedByErr (http://localhost:43923/__cypress/runner/cypress_runner.js:158660:12)\n    at http://localhost:43923/__cypress/runner/cypress_runner.js:159271:13\n    at tryCatcher (http://localhost:43923/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43923/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:43923/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:43923/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:43923/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:43923/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:43923/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:43923/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:43923/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:43923/__cypress/tests?p=cypress/integration/2-advanced-examples/UITests/ReloadTest.js:102:8)",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nundefined/seleniumPractise/\n\nWe failed looking for this file at the path:\n\n/cypress-e2e-docker/undefined/seleniumPractise/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:46371/__cypress/runner/cypress_runner.js:159291:84\n    at visitFailedByErr (http://localhost:46371/__cypress/runner/cypress_runner.js:158660:12)\n    at http://localhost:46371/__cypress/runner/cypress_runner.js:159271:13\n    at tryCatcher (http://localhost:46371/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:46371/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:46371/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:46371/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:46371/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:46371/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:46371/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:46371/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:46371/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:46371/__cypress/tests?p=cypress/integration/2-advanced-examples/UITests/ReloadTest.js:102:8)",
                 "diff": null
               },
-              "uuid": "173eebe1-6152-42b5-8cc4-8b15557944c1",
-              "parentUUID": "253990ee-d800-4633-a4ed-31acc2296ab3",
+              "uuid": "a98eecb0-346b-49c3-abbf-68c14409e411",
+              "parentUUID": "9a1e6943-b6d8-41a5-918b-af40ea9b21ae",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "173eebe1-6152-42b5-8cc4-8b15557944c1"
+            "a98eecb0-346b-49c3-abbf-68c14409e411"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 336,
+          "duration": 594,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

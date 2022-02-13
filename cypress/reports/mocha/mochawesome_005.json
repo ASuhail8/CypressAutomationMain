@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-10T05:21:38.438Z",
-    "end": "2021-09-10T05:21:38.442Z",
-    "duration": 4,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2022-02-13T08:25:23.827Z",
+    "end": "2022-02-13T08:25:36.417Z",
+    "duration": 12590,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "8c603004-171f-4f90-8596-b5034f2f7dff",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/UITests/FrameworkTest.js",
+      "file": "cypress/integration/2-advanced-examples/UITests/FrameworkTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d54c917f-cfb3-49ab-b3be-8e663f6dbc93",
+          "title": "Data Driven test using fiXtures",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Driving data",
+              "fullTitle": "Data Driven test using fiXtures Driving data",
+              "timedOut": null,
+              "duration": 10680,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const homePage = new _HomePage.default();\nconst productsPage = new _ProductsPage.default();\nconst checkOutPage = new _CheckoutPage.default(); //url : https://rahulshettyacademy.com/angularpractice/\ncy.visit(Cypress.env('rahulUrlProd') + '/angularpractice/');\nhomePage.getName().type(this.data.name);\nhomePage.getName().should('have.value', this.data.name);\nhomePage.getName().should('have.attr', 'minlength', '2');\nhomePage.getName().then(function (element) {\n  var len = element.attr('minlength');\n  expect(len).to.equal('2');\n});\nhomePage.getEntrprenaurRadio().should('be.disabled');\nhomePage.getEmail().type(this.data.email);\nhomePage.getEmail().should('have.value', this.data.email);\nhomePage.getCheckBox().check().should('be.checked');\nhomePage.selectGender().select(this.data.gender); //Click on Shop\nhomePage.getShopButton().click();\nthis.data.productName.forEach(function (element) {\n  cy.productSelector(element);\n}); //click on Checkout\nproductsPage.getCheckOutButton().click();\nvar sum = 0;\ncy.get('tr td:nth-child(4) strong').each(($el, index, $list) => {\n  var res = $el.text().split(\" \")[1].trim();\n  cy.log(res);\n  sum = Number(sum) + Number(res);\n}).then(function () {\n  cy.log(sum);\n}); //Validate the sum \ncy.get('h3 strong').then(function (totalSum) {\n  var total = totalSum.text().split(\" \")[1].trim();\n  expect(sum).to.equal(Number(total));\n});\ncy.contains('Checkout').click(); //Enter COuntry\ncheckOutPage.getCountry().type(this.data.Country);\nCypress.config('defaultCommandTimeout', 8000);\ncy.get('div.suggestions ul li a').click();\ncheckOutPage.getCheckbox().click({\n  force: true\n});\ncheckOutPage.getPurchaseButton().click();\ncheckOutPage.getSuccessMessage().then(function (element) {\n  cy.log(element.text());\n  expect(element.text().includes(\"Success\")).to.be.true;\n});",
+              "err": {},
+              "uuid": "b82a52f2-36e5-406f-bef2-7341c333a27a",
+              "parentUUID": "d54c917f-cfb3-49ab-b3be-8e663f6dbc93",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b82a52f2-36e5-406f-bef2-7341c333a27a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10680,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

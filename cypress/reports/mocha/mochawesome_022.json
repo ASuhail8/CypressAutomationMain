@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 1,
     "failures": -1,
-    "start": "2022-02-13T09:43:53.493Z",
-    "end": "2022-02-13T09:43:53.659Z",
-    "duration": 166,
+    "start": "2022-02-13T10:02:02.172Z",
+    "end": "2022-02-13T10:02:02.313Z",
+    "duration": 141,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 50,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c6fd13c3-4e7f-45d5-b204-df6c228459b2",
+      "uuid": "332d58e3-f6b8-4f54-b46a-deccf0ec5e10",
       "title": "",
       "fullFile": "cypress/integration/2-advanced-examples/UITests/amazonTest.js",
       "file": "cypress/integration/2-advanced-examples/UITests/amazonTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5be9792c-6bc8-40e3-a435-6f2ebde4c5db",
+          "uuid": "f059e2d3-171c-4631-b836-cf86a506a7cd",
           "title": "Amazon",
           "fullFile": "",
           "file": "",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "",
               "err": {},
-              "uuid": "43e7c2e3-c83b-4f47-a029-fc8347a85a16",
-              "parentUUID": "5be9792c-6bc8-40e3-a435-6f2ebde4c5db",
+              "uuid": "2c14c26d-88e2-455c-b56b-57fbb8c75ed6",
+              "parentUUID": "f059e2d3-171c-4631-b836-cf86a506a7cd",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "ArraysTest",
               "fullTitle": "Amazon ArraysTest",
               "timedOut": null,
-              "duration": 34,
+              "duration": 26,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,22 +65,22 @@
               "context": null,
               "code": "var array = [\"suhail\", \"sana\"];\narray.forEach(data => {\n  cy.log(data);\n});",
               "err": {},
-              "uuid": "60582424-9f1e-4368-bb19-970c12d9bf94",
-              "parentUUID": "5be9792c-6bc8-40e3-a435-6f2ebde4c5db",
+              "uuid": "2ece1c1e-8345-45d7-889a-00b52159b06b",
+              "parentUUID": "f059e2d3-171c-4631-b836-cf86a506a7cd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "60582424-9f1e-4368-bb19-970c12d9bf94"
+            "2ece1c1e-8345-45d7-889a-00b52159b06b"
           ],
           "failures": [],
           "pending": [
-            "43e7c2e3-c83b-4f47-a029-fc8347a85a16"
+            "2c14c26d-88e2-455c-b56b-57fbb8c75ed6"
           ],
           "skipped": [],
-          "duration": 34,
+          "duration": 26,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

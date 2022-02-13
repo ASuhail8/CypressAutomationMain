@@ -1,23 +1,84 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
+    "suites": 1,
+    "tests": 1,
     "passes": 0,
     "pending": 0,
-    "failures": 0,
-    "start": "2021-09-10T05:21:44.607Z",
-    "end": "2021-09-10T05:21:44.621Z",
-    "duration": 14,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "failures": 1,
+    "start": "2022-02-13T08:25:41.252Z",
+    "end": "2022-02-13T08:25:41.903Z",
+    "duration": 651,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "2c239b0b-037d-47ea-bf1e-66dca9e5afba",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/UITests/ReloadTest.js",
+      "file": "cypress/integration/2-advanced-examples/UITests/ReloadTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "541b6548-1867-4014-9dd5-c07c4bb5d0ed",
+          "title": "Reload ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Reload test",
+              "fullTitle": "Reload  Reload test",
+              "timedOut": null,
+              "duration": 255,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//url : https://rahulshettyacademy.com/seleniumPractise/#/\ncy.visit(Cypress.env('rahulUrl') + '/seleniumPractise/#/');\ncy.get('.search-keyword').type(\"Carrot\");\ncy.reload();\ncy.get('.brand').should('have.text', 'GREENKART');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nundefined/seleniumPractise/\n\nWe failed looking for this file at the path:\n\n/CypressAutomationMain/undefined/seleniumPractise/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nundefined/seleniumPractise/\n\nWe failed looking for this file at the path:\n\n/CypressAutomationMain/undefined/seleniumPractise/\n\nThe internal Cypress web server responded with:\n\n  > 404: Not Found\n    at http://localhost:62864/__cypress/runner/cypress_runner.js:159291:84\n    at visitFailedByErr (http://localhost:62864/__cypress/runner/cypress_runner.js:158660:12)\n    at http://localhost:62864/__cypress/runner/cypress_runner.js:159271:13\n    at tryCatcher (http://localhost:62864/__cypress/runner/cypress_runner.js:13196:23)\n    at Promise._settlePromiseFromHandler (http://localhost:62864/__cypress/runner/cypress_runner.js:11131:31)\n    at Promise._settlePromise (http://localhost:62864/__cypress/runner/cypress_runner.js:11188:18)\n    at Promise._settlePromise0 (http://localhost:62864/__cypress/runner/cypress_runner.js:11233:10)\n    at Promise._settlePromises (http://localhost:62864/__cypress/runner/cypress_runner.js:11309:18)\n    at _drainQueueStep (http://localhost:62864/__cypress/runner/cypress_runner.js:7903:12)\n    at _drainQueue (http://localhost:62864/__cypress/runner/cypress_runner.js:7896:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:62864/__cypress/runner/cypress_runner.js:7912:5)\n    at Async.drainQueues (http://localhost:62864/__cypress/runner/cypress_runner.js:7782:14)\nFrom Your Spec Code:\n    at Context.eval (http://localhost:62864/__cypress/tests?p=cypress\\integration\\2-advanced-examples\\UITests\\ReloadTest.js:102:8)",
+                "diff": null
+              },
+              "uuid": "bba868da-2bee-4d20-b37b-6d8a2bbd2aef",
+              "parentUUID": "541b6548-1867-4014-9dd5-c07c4bb5d0ed",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "bba868da-2bee-4d20-b37b-6d8a2bbd2aef"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 255,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

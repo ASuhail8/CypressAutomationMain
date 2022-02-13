@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-13T08:26:53.105Z",
-    "end": "2022-02-13T08:27:07.253Z",
-    "duration": 14148,
+    "start": "2022-02-13T09:45:14.098Z",
+    "end": "2022-02-13T09:45:28.495Z",
+    "duration": 14397,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "793d089e-22cb-4593-8d45-d6a6071daccb",
+      "uuid": "d3f9a23e-a7da-4c93-a0bb-3d50b8db7604",
       "title": "",
       "fullFile": "cypress/integration/2-advanced-examples/UITests/Test4.js",
       "file": "cypress/integration/2-advanced-examples/UITests/Test4.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "aa5975ff-20bf-4601-8834-84f6349a1902",
+          "uuid": "1414b400-7b64-4bdb-bcf5-f1b9527bb066",
           "title": "Alerts",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "alert Tc",
               "fullTitle": "Alerts alert Tc",
               "timedOut": null,
-              "duration": 12194,
+              "duration": 12659,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\"); // AUtom handling pop ups\ncy.get('#alertbtn').click();\ncy.get('#confirmbtn').click(); // TO get text on pop up by firing events\ncy.get('#alertbtn').click();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Hello , share this practice page and share your knowledge');\n});\ncy.get('#confirmbtn').click();\ncy.on('window:confirm', str => {\n  expect(str).to.equal('Hello , Are you sure you want to confirm?');\n}); // To handle child pop up by opening in the same window and deleting the target attribute\ncy.get('#opentab').invoke('removeAttr', 'target').click(); //TO get current url and verify\ncy.url().should('include', 'rahulshettyacademy'); //Browser navigation\ncy.go('back'); // To handle Webtables\ncy.get('table[name=\"courses\"] tr td:nth-child(2)').each(($el, index, $list) => {\n  const course = $el.text();\n  if (course.includes(\"WebSecurity\")) {\n    cy.get('table[name=\"courses\"] tr td:nth-child(2)').eq(index).next().then(function (price) {\n      const priceText = price.text();\n      expect(priceText).to.equal('20');\n    });\n  }\n});",
               "err": {},
-              "uuid": "1f9c92f2-933c-49b9-8117-6461830ad645",
-              "parentUUID": "aa5975ff-20bf-4601-8834-84f6349a1902",
+              "uuid": "7dcdf6c9-70cf-474a-87d6-1a4313cdb9b3",
+              "parentUUID": "1414b400-7b64-4bdb-bcf5-f1b9527bb066",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1f9c92f2-933c-49b9-8117-6461830ad645"
+            "7dcdf6c9-70cf-474a-87d6-1a4313cdb9b3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 12194,
+          "duration": 12659,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

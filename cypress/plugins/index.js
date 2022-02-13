@@ -1,4 +1,3 @@
-
 const { downloadFile } = require('cypress-downloadfile/lib/addPlugin')
 const Jimp = require("jimp");
 module.exports = (on, config) => {

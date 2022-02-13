@@ -8,7 +8,7 @@ describe('Amazon', function(){
 
     })
 
-    it('Amazon sign in test', function() {
+    it.skip('Amazon sign in test', function() {
 
     cy.visit(Cypress.env('amazonUrl'))
     cy.get('#nav-link-accountList-nav-line-1').click()
@@ -19,5 +19,17 @@ describe('Amazon', function(){
        cy.log(text)
        expect(text).equal('There was a problem')
     })
+
+    
 })
+
+it("ArraysTest", ()=>{
+    var array = ["suhail", "sana"]
+
+    array.forEach((data)=>{
+        cy.log(data)
+    })
+
+})
+
 })

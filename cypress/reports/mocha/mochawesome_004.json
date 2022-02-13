@@ -1,23 +1,80 @@
 {
   "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-10T05:21:32.769Z",
-    "end": "2021-09-10T05:21:32.769Z",
-    "duration": 0,
-    "testsRegistered": 0,
-    "passPercent": null,
-    "pendingPercent": null,
+    "start": "2022-02-13T08:25:08.650Z",
+    "end": "2022-02-13T08:25:18.962Z",
+    "duration": 10312,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    false
+    {
+      "uuid": "a53f66bb-5376-4ddf-a67d-36711199c9b0",
+      "title": "",
+      "fullFile": "cypress/integration/2-advanced-examples/UITests/Frames.spec.js",
+      "file": "cypress/integration/2-advanced-examples/UITests/Frames.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b7c6015-cbd1-4da7-b328-e20f15991a1a",
+          "title": "Frames",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Frames test case",
+              "fullTitle": "Frames Frames test case",
+              "timedOut": null,
+              "duration": 8203,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://rahulshettyacademy.com/AutomationPractice/'); //To switch to frame\n//download the plugins req and import the iframe package\ncy.frameLoaded('#courses-iframe');\ncy.iframe().find('a[href*=\"mentorship\"]').eq(0).click();\ncy.iframe().find('span.blinkingText').then(function (el) {\n  const text = el.text();\n  expect(text).include('Get Any 4 Courses for FREE');\n});",
+              "err": {},
+              "uuid": "3a9e4aff-7e5e-4959-bb45-1ba29cf9d04f",
+              "parentUUID": "5b7c6015-cbd1-4da7-b328-e20f15991a1a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3a9e4aff-7e5e-4959-bb45-1ba29cf9d04f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8203,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
   ],
   "meta": {
     "mocha": {

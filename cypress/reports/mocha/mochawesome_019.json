@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2022-02-13T08:26:11.218Z",
-    "end": "2022-02-13T08:26:44.420Z",
-    "duration": 33202,
+    "start": "2022-02-13T09:44:54.947Z",
+    "end": "2022-02-13T09:45:08.586Z",
+    "duration": 13639,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "98a3fd46-3b5a-4606-8044-851554c8973f",
+      "uuid": "ab129a32-2800-49cc-8aec-0c1833b8c4c1",
       "title": "",
       "fullFile": "cypress/integration/2-advanced-examples/UITests/Test3.js",
       "file": "cypress/integration/2-advanced-examples/UITests/Test3.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "229b5825-bcac-4115-929c-857419d77358",
+          "uuid": "e9598673-71e5-494b-838c-bfb36c2a0482",
           "title": "CHeckboxes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Check box Tc",
               "fullTitle": "CHeckboxes Check box Tc",
               "timedOut": null,
-              "duration": 31312,
+              "duration": 11971,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\"); // TO select single checkboxes\ncy.get('#checkBoxOption1').check().should('be.checked').and('have.value', 'option1');\ncy.get('#checkBoxOption1').uncheck().should('not.be.checked'); //To select multiple checkboxes\ncy.get(\"input[type='checkbox']\").check(['option2', 'option3']).should('be.checked'); // To deselect multiple checkboxes\ncy.get(\"input[type='checkbox']\").uncheck(['option2', 'option3']).should('not.be.checked'); // To handle static dropdowns\ncy.get('select').select('option3').should('have.value', 'option3'); // to handle dynamic dropdown.\ncy.get('#autocomplete').type('ind');\ncy.wait(2000);\ncy.get('.ui-menu-item div').each(($el, index, $list) => {\n  if ($el.text() == \"India\") {\n    $el.click();\n  }\n}); //verify dropdown selected\ncy.get('#autocomplete').should('have.value', 'India'); // visible invisible element\ncy.get('#displayed-text').should('be.visible');\ncy.get('#hide-textbox').click();\ncy.get('#displayed-text').should('not.be.visible'); //Radio buttons\ncy.get(\"input[value='radio1']\").check().should('be.checked');",
               "err": {},
-              "uuid": "0188716b-559d-4cff-92f3-2375ed033bb0",
-              "parentUUID": "229b5825-bcac-4115-929c-857419d77358",
+              "uuid": "f28c74f4-41e0-4460-a25a-a4de2041622b",
+              "parentUUID": "e9598673-71e5-494b-838c-bfb36c2a0482",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0188716b-559d-4cff-92f3-2375ed033bb0"
+            "f28c74f4-41e0-4460-a25a-a4de2041622b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 31312,
+          "duration": 11971,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

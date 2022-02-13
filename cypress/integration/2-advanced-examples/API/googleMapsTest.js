@@ -13,6 +13,7 @@ cy.request({
     body: myFixture.body
 
 }).then((res)=>{
+    cy.log(JSON.stringify(res.body))
     expect(res.status).to.eq(200)
     expect(res.isOkStatusCode).to.be.true
     place_id = res.body.place_id

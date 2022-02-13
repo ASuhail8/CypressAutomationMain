@@ -1,80 +1,23 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 0,
+    "tests": 0,
+    "passes": 0,
     "pending": 0,
     "failures": 0,
-    "start": "2021-09-10T05:23:21.204Z",
-    "end": "2021-09-10T05:23:34.367Z",
-    "duration": 13163,
-    "testsRegistered": 1,
-    "passPercent": 100,
-    "pendingPercent": 0,
+    "start": "2022-02-13T09:44:01.342Z",
+    "end": "2022-02-13T09:44:01.355Z",
+    "duration": 13,
+    "testsRegistered": 0,
+    "passPercent": null,
+    "pendingPercent": null,
     "other": 0,
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false
   },
   "results": [
-    {
-      "uuid": "3612f482-9acb-403c-986c-d2ee1e7ef064",
-      "title": "",
-      "fullFile": "cypress/integration/2-advanced-examples/UITests/Test4.js",
-      "file": "cypress/integration/2-advanced-examples/UITests/Test4.js",
-      "beforeHooks": [],
-      "afterHooks": [],
-      "tests": [],
-      "suites": [
-        {
-          "uuid": "bd22e9c4-485f-43c2-aa91-05d31670bc3e",
-          "title": "Alerts",
-          "fullFile": "",
-          "file": "",
-          "beforeHooks": [],
-          "afterHooks": [],
-          "tests": [
-            {
-              "title": "alert Tc",
-              "fullTitle": "Alerts alert Tc",
-              "timedOut": null,
-              "duration": 10627,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
-              "pending": false,
-              "context": null,
-              "code": "cy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\"); // AUtom handling pop ups\ncy.get('#alertbtn').click();\ncy.get('#confirmbtn').click(); // TO get text on pop up by firing events\ncy.get('#alertbtn').click();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Hello , share this practice page and share your knowledge');\n});\ncy.get('#confirmbtn').click();\ncy.on('window:confirm', str => {\n  expect(str).to.equal('Hello , Are you sure you want to confirm?');\n}); // To handle child pop up by opening in the same window and deleting the target attribute\ncy.get('#opentab').invoke('removeAttr', 'target').click(); //TO get current url and verify\ncy.url().should('include', 'rahulshettyacademy'); //Browser navigation\ncy.go('back'); // To handle Webtables\ncy.get('table[name=\"courses\"] tr td:nth-child(2)').each(($el, index, $list) => {\n  const course = $el.text();\n  if (course.includes(\"WebSecurity\")) {\n    cy.get('table[name=\"courses\"] tr td:nth-child(2)').eq(index).next().then(function (price) {\n      const priceText = price.text();\n      expect(priceText).to.equal('20');\n    });\n  }\n});",
-              "err": {},
-              "uuid": "26b440ac-4e58-480a-94fb-76df17d9d291",
-              "parentUUID": "bd22e9c4-485f-43c2-aa91-05d31670bc3e",
-              "isHook": false,
-              "skipped": false
-            }
-          ],
-          "suites": [],
-          "passes": [
-            "26b440ac-4e58-480a-94fb-76df17d9d291"
-          ],
-          "failures": [],
-          "pending": [],
-          "skipped": [],
-          "duration": 10627,
-          "root": false,
-          "rootEmpty": false,
-          "_timeout": 2000
-        }
-      ],
-      "passes": [],
-      "failures": [],
-      "pending": [],
-      "skipped": [],
-      "duration": 0,
-      "root": true,
-      "rootEmpty": true,
-      "_timeout": 2000
-    }
+    false
   ],
   "meta": {
     "mocha": {

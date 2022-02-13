@@ -1,7 +1,7 @@
 {
-  "defaultCommandTimeout": 5000,
-  "projectId": "2marjb",
-  "reporter": "cypress-multi-reporters",
+    "defaultCommandTimeout": 5000,
+    "projectId": "2marjb",
+    "reporter": "cypress-multi-reporters",
     "reporterOptions": {
         "reporterEnabled": "mochawesome",
         "mochawesomeReporterOptions": {
@@ -12,11 +12,10 @@
             "json": true
         }
     },
-
-    "env" : { 
-                "rahulUrlProd" : "https://rahulshettyacademy.com",
-                "rahulUrlUAT" : "https://rahulshettyacademy.com/UAT",
-                "amazonUrl" : "https://www.amazon.in/"
-            }       
-
+    "env": {
+        "rahulUrlProd": "https://rahulshettyacademy.com",
+        "rahulUrlUAT": "https://rahulshettyacademy.com/UAT",
+        "amazonUrl": "https://www.amazon.in/"
+    },
+    "retries": 1
 }
