@@ -1,18 +1,12 @@
 pipeline {
     agent {
-        docker { image 'asuhail8/cypress-e2e' }
+        docker { image 'node:16.13.1-alpine' }
     }
-    stages{
-        stage('Run the amazon test case'){
-            steps{
-                sh 'npx cypress run --spec "cypress/integration/2-advanced-examples/UITests/amazonTest.js'
+    stages {
+        stage('Test') {
+            steps {
+                sh 'node --version'
             }
-             post {
-            always{
-                   junit './cypress/results/*.xml' 
-                }
         }
-        }
-       
     }
 }
