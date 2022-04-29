@@ -1,16 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
-            agent {
-                docker {
-                    image 'asuhail/cypress-e2e'
-                    // Run the container on the node specified at the top-level of the Pipeline, in the same workspace, rather than on a new node entirely:
-                    reuseNode true
-                }
-            }
-            steps {
-                sh 'gradle --version'
+        stage('Pull the docker image') {
+           steps{
+               sh 'docker pull asuhail8/cypress-e2e'
+           }
+        }
+        stage('Run amazon test case '){
+            steps{
+                sh "npx cypress run --spec 'cypress/integration/2-advanced-examples/UITests/amazonTest.js'"
             }
         }
     }
