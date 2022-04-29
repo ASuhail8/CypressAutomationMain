@@ -8,7 +8,7 @@ describe('Amazon', function(){
 
     })
 
-    it.skip('Amazon sign in test', function() {
+    it('Amazon sign in test', function() {
 
     cy.visit(Cypress.env('amazonUrl'))
     cy.get('#nav-link-accountList-nav-line-1').click()
